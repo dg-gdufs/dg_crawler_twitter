@@ -1,7 +1,16 @@
 # encoding: utf-8
+'''
+Description: get_advanced生成脚本
+Version: 1.0
+Autor: Renhetian
+Date: 2022-01-03 20:35:40
+LastEditors: Renhetian
+LastEditTime: 2022-01-03 21:19:33
+'''
 
 import json
 import copy
+import fire
 
 default_config = {
     "words": [],
@@ -24,7 +33,7 @@ default_config = {
 word_list = [["COVID-19","COVID","COVID19","Covid19"],"Delta variant","pandemic","epidemic","vaccine","Virus","Coronavirus","biolab","medical supplies","outbreak","Wuhan"]
 from_ = ["ChineseEmbinUK"]
 until = ""
-since = "2019-10-01"
+since = "2020-10-01"
 step = "month"
 
 def run(file_name):

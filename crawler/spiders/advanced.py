@@ -16,9 +16,12 @@ class AdvancedSpider(BaseSpider):
     name = 'advanced'
     custom_settings = {"DEFAULT_REQUEST_HEADERS": TWITTER_DEFAULT_HEADER}
     config = 'advanced_config.json'
+    proxy = '01'
 
-    def start_requests(self):
+    def start_requests(self, **kwargs):
         try:
+            for i in kwargs.keys():
+                setattr(self, i, kwargs[i])
             js = json.load(open('config/' + self.config, 'r', encoding='utf-8'))
             for config_list in js:
                 q_list = FormatUtil.q_format(config_list)
