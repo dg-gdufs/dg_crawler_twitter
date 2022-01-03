@@ -5,7 +5,7 @@ Version: 1.0
 Autor: Renhetian
 Date: 2022-01-03 20:35:40
 LastEditors: Renhetian
-LastEditTime: 2022-01-03 21:19:33
+LastEditTime: 2022-01-03 22:09:24
 '''
 
 import json
@@ -30,10 +30,15 @@ default_config = {
     "step": ""
 }
 
+# 搜索词
 word_list = [["COVID-19","COVID","COVID19","Covid19"],"Delta variant","pandemic","epidemic","vaccine","Virus","Coronavirus","biolab","medical supplies","outbreak","Wuhan"]
+# 发布者
 from_ = ["ChineseEmbinUK"]
+# 截止时间
 until = ""
+# 开始时间
 since = "2020-10-01"
+# 步长
 step = "month"
 
 def run(file_name):
@@ -51,6 +56,6 @@ def run(file_name):
 
 
 # 拉取advanced配置脚本
-# python -m scripts.get_advanced
+# python -m scripts.get_advanced --file_name=advanced_config.json
 if __name__ == "__main__":
-    run("advanced_config.json")
+    fire.Fire(run)

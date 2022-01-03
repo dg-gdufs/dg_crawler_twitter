@@ -4,7 +4,7 @@
  * @Autor: Renhetian
  * @Date: 2022-01-03 20:35:40
  * @LastEditors: Renhetian
- * @LastEditTime: 2022-01-03 22:00:46
+ * @LastEditTime: 2022-01-03 22:04:20
 -->
 
 # Advanced
@@ -21,7 +21,7 @@ config: 爬虫启动配置文件名，从路径config/下寻找。 (-a config=ad
 
 ## 配置文件
 
-words: 搜索词，二维列表类型，一维列表为与，二维列表为或
+words: 搜索词，列表类型，一维列表为与，二维列表为或，列表维度不能混用
 
 none_words: 屏蔽词，列表类型
 
