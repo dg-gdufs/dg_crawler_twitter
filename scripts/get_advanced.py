@@ -5,7 +5,7 @@ Version: 1.0
 Autor: Renhetian
 Date: 2022-01-03 20:35:40
 LastEditors: Renhetian
-LastEditTime: 2022-01-03 22:09:24
+LastEditTime: 2022-02-22 17:55:23
 '''
 
 import json
@@ -31,9 +31,12 @@ default_config = {
 }
 
 # 搜索词
-word_list = [["COVID-19","COVID","COVID19","Covid19"],"Delta variant","pandemic","epidemic","vaccine","Virus","Coronavirus","biolab","medical supplies","outbreak","Wuhan"]
+# word_list = [["COVID-19","COVID","COVID19","Covid19"],"Delta variant","pandemic","epidemic","vaccine","Virus","Coronavirus","biolab","medical supplies","outbreak","Wuhan"]
+word_list = ["OBOR", "Belt and Road", "B&R", "Silk Road", "One Belt One Road"]
 # 发布者
-from_ = ["ChineseEmbinUK"]
+# from_ = ["ChineseEmbinUK"]
+# from_ = ["ChinaDaily"]
+from_ = []
 # 截止时间
 until = ""
 # 开始时间
